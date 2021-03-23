@@ -4,6 +4,8 @@ import profilePic from '../profile.png'
 
 const Header = () => {
     return (
+    <section className="header">
+            
         <div className="header-wrapper">
             <div className="main-info">
                     <img className="profile-pic" src={profilePic} alt="profile-pic"/>
@@ -16,7 +18,7 @@ const Header = () => {
                     
                     className="typed-text"
                     strings={[	"We become what we think about...", 
-                    "Winning isn\'t everything,but wanting to win is...", 
+                    "Winning isn't everything,but wanting to win is...", 
                     "Either you run the day, or the day runs you", 
                     "Fall seven times and stand up eight",
                     "Everything has beauty, but not everyone can see"]}
@@ -29,6 +31,7 @@ const Header = () => {
                 <a href="#" className="btn-resume-download-link">  Resume </a>
             </div>
         </div>
+    </section>
     )
 }
 

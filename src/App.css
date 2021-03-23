@@ -75,7 +75,8 @@ button:hover{
 /************************HEADER************************/
 .header-wrapper{
   position:relative;
-  background: url(watercolor_bg.jpg) no-repeat;
+  /* background: url(watercolor_bg.jpg) no-repeat; */
+  background: url(vector_mountains_bg.jpg) no-repeat;
   background-size: cover ;
   background-position: center;
   height: 90vh;
@@ -112,6 +113,8 @@ button:hover{
   font-weight:bolder;
   color: gold;
   font-size: 2rem;
+  text-shadow: 1px 1px #000000;
+  
 }
 
 
@@ -155,4 +158,33 @@ button:hover{
   height: 100vh;
   width: 100vw;
   z-index:1;
+}
+
+/****************************** ABOUT ME *****************************/
+
+.about-me span{
+  text-transform: uppercase !important;
+}
+.about-me{
+  padding: 8rem 5rem;
+}
+.img-fluid{
+  margin-right: 2rem;
+  margin-top: 4.8rem;
+}
+
+.about-me .about-title h2 > span{
+  display: block;
+  letter-spacing: 0.125rem;
+  font: normal bold 3.0625rem/3.75rem 'Syne Mono', monospace ;
+}
+
+p.about-para{
+  color:var(--primary-blue);
+  font: normal 500 1rem/1.5625rem 'Cutive Mono', monospace;
+}
+
+.about-contact{
+  color:var(--primary-blue);
+  font: normal 500 1rem/1.5625rem 'Cutive Mono', monospace;
 }
