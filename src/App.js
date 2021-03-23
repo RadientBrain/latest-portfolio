@@ -4,7 +4,8 @@ import Particles from 'react-particles-js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
-import Skills from './components/Skills.js';
+import Skills from './components/Skills';
+import Extras from './components/Extras';
 
 function App() {
   return (
@@ -116,6 +117,7 @@ function App() {
     <Header/>
     <About/>
     <Skills/>
+    <Extras/>
     </>
   );
 }
