@@ -10,19 +10,25 @@ function About() {
                     <div className="col-lg-6 col-md-12"> <img src={study} alt="About-me" className="img-fluid"/> </div>
                     <div className="col-lg-6 col-md-12 about-title">
                         <h2 className="pt-5">
-                            <span>Let me </span>
-                            <span>introduce </span>
-                            <span>myself</span>
+                            <span>About </span>
+                            <span>Me</span>
                         </h2>
                         <div className="paragraph py-4 w75">
                             <p className="about-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit repudiandae magnam tenetur sunt omnis maxime animi! Sint, optio magni?
+                            I'm a currently pursuing my B.Tech in Computer Science and Engineering. 
                             </p>
                             <p className="about-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit repudiandae magnam tenetur sunt omnis maxime animi! Sint, optio magni?
+                                I like coding in Python but am comfortable with many languages like C++, Java, C#, etc.
+                                I have experience with the Deep Learning, App and Web Development.
                             </p>
-                            <div className="about-contact">
-                            <b>Like Me?</b><a href="#" className="btn-resume-download-link">Contact Here</a>
+                            <div className="about-contact col-lg-2 col-sm-6">
+                            <div className="row-lg-2 row-sm-6">
+                            <b>Like Me?</b>
+                            </div>
+                           <div className="row-lg-2 row-sm-6">
+                               
+                            <a href="#" className="btn-resume-download-link">Contact</a>
+                           </div>
                             </div>
                         </div>
                     </div>

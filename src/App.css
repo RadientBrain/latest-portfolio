@@ -7,11 +7,13 @@
   --primary-green:#39ff14;
   --primary-red:#ef4035;
   --primary-blue:#3366cc;
+  --primary-dark-green:#70af85;
 }
 
 body {
   font-family: 'Cutive Mono', monospace;
 }
+
 
 /************************NAVBAR************************/
 
@@ -134,6 +136,7 @@ button:hover{
   color:var(--primary-white);
   text-decoration: none;
   border-radius: 1rem;
+  transition:transform 0.4s ease !important;
   background-color: var(--primary-blue);
   padding-right: 0.75rem;
   padding-left: 0.75rem;
@@ -144,6 +147,7 @@ button:hover{
 
 .btn-resume-download-link:hover{
   text-decoration: none;
+  transform: scale(1.2) !important;
   border: 0.2rem solid var(--primary-green);
   color: var(--primary-orange);
 }
@@ -173,18 +177,84 @@ button:hover{
   margin-top: 4.8rem;
 }
 
-.about-me .about-title h2 > span{
+
+.exp-skills, .about-me .about-title h2 > span{
   display: block;
   letter-spacing: 0.125rem;
   font: normal bold 3.0625rem/3.75rem 'Syne Mono', monospace ;
 }
 
 p.about-para{
-  color:var(--primary-blue);
-  font: normal 500 1rem/1.5625rem 'Cutive Mono', monospace;
+  color:var(--primary-dark-green);
+  font: normal bold 1rem/1.5625rem 'Cutive Mono', monospace;
 }
 
 .about-contact{
   color:var(--primary-blue);
   font: normal 500 1rem/1.5625rem 'Cutive Mono', monospace;
+}
+
+/*********************** SKILLS *********************/
+
+.outer-sibling{
+  border-left: 2px solid var(--primary-blue);
+  border-radius: 2rem !important;
+}
+
+.skills-area .container-fluid .single-skill > img{
+  width : 6rem;
+  height : 6rem;
+  padding : 0.5rem;
+}
+
+.skills-area{
+  padding: 1rem 5rem;
+  margin-bottom:4rem;
+}
+
+.exp-skills{
+  display:flex;
+  position:relative;
+  margin: 3rem 0;
+  padding:2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid var(--primary-dark-green);
+  border-radius: 2rem;
+  text-align: center;
+  transition:transform 0.4s ease;
+  font-size: 0.1rem !important;
+}
+
+.skills-area .outer-sibling .col-lg-4{
+  display: flex;
+  justify-content:center;
+}
+
+.skills-area .outer-sibling .col-lg-4 > .single-skill{
+  border: 3px solid var(--primary-orange) !important;
+  text-align: center;
+  padding:0.1rem 0;
+  margin: 0.1rem 0;
+  cursor: pointer;
+  width: 11.25rem;
+  height: 6.25rem;
+  transition:transform 0.4s ease;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+.skills-area .outer-sibling .col-lg-4 > .single-skill > img{
+  width: 50%;
+}
+
+.exp-skills:hover, .skills-area .outer-sibling .col-lg-4 > .single-skill:hover{
+  box-shadow: 5px 10px 10px 5px var(--primary-dark-green);
+  transform: scale(1.07);
+}
+
+.exp-skills:hover, .skills-area .outer-sibling .col-lg-4 > .single-skill:hover > img{
+  filter:brightness(0.8);
 }
