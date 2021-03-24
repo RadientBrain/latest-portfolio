@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Extras from './components/Extras';
 import Achievements from './components/Achievements';
-
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -30,6 +30,9 @@ function App() {
           "stroke": {
             "width": 0,
             "color": "#b6b2b2"
+          },
+          "polygon": {
+            "nb_sides": 6
           }
         },
         "opacity": {
@@ -123,6 +126,7 @@ function App() {
     <Projects/>
     <Achievements/>
     <Extras/>
+    <Contact/>
     </>
   );
 }

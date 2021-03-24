@@ -417,7 +417,7 @@ p.extras-para{
 
 .achievements-area .owl-carousel .achievement {
   padding: 0.5rem;
-  margin: 1rem 1rem !important;
+  margin: 3rem 1rem 1.5rem 1rem!important;
   border-left: 3px solid var(--primary-dark-green);
   box-shadow: 0 0 15px var(--primary-dark-green) inset; 
 }
@@ -444,4 +444,64 @@ p.extras-para{
   margin:0 !important;
   align-items: center;
   padding: 0.5rem;
+}
+
+.achievements-area .carousel .owl-carousel .owl-dots .owl-dot.active span{
+  background: var(--primary-blue);
+  width:0.93rem;
+  height:0.93rem;
+}
+
+/************************** CONTACT ************************/
+.contact-area{
+  margin: 5rem 0 5rem 0;
+  padding: 3rem 0;
+}
+
+.contact-area .contact .row .contact-title > h4{
+  font-family: 'Syne Mono', monospace !important;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  color:var(--primary-white);
+}
+
+.contact-area .contact .row .contact-title > p{
+  display:block;
+  font: normal 900 1rem/1.8625rem 'Cutive Mono', monospace;
+}
+
+
+.contact-area .contact{
+  background: var(--primary-dark-green);
+  width: 60%;
+  padding: 3rem 0;
+  margin: 1rem auto;
+  border-radius: 0.25rem;
+}
+
+.contact-area .contact .input-fields{
+  justify-content: center;
+  align-items:center;
+  padding: 1rem;
+}
+.contact-area .contact .input-fields form .input-textbox .col .btn-submit{
+  padding:0.3rem;
+  margin:0.2rem;
+}
+.contact-area .contact .input-fields form .input-textbox > input{
+  width:20rem;
+  padding:1rem 0;
+  margin:1rem;
+  justify-content: center;
+  border:0.125rem solid black;
+  font: normal 900 1rem/1.2625rem 'Cutive Mono', monospace;
+}
+.contact-area .contact .input-fields form .input-textbox > textarea{
+  width:20rem;
+  padding:1rem 1rem;
+  margin:1rem;
+  justify-content: center;
+  border:0.125rem solid black;
+  font: normal 900 1rem/1.2625rem 'Cutive Mono', monospace;
 }

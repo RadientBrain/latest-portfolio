@@ -2,21 +2,21 @@ import React from 'react'
 //Importing react font awesome
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  } from '@fortawesome/free-solid-svg-icons'
-import python from '../python.png'
-import cpp from '../cpp.png'
-import flask from '../flask.png'
-import java from '../java.png'
-import javaS from '../javascript.png'
-import csharp from '../c_sharp.png'
-import dotnet from '../dotnet.png'
-import gitt from '../git.png'
-import gcpp from '../gcp.png'
-import htmll from '../html.png'
-import csss from '../css.png'
-import nodejs from '../nodejs.svg'
-import tsf from '../tensorflow.png'
-import sqlserver from '../sql-server.png'
-import mysqll from '../mysql.png'
+import python from '../python.svg'
+import cpp from '../cpp.svg'
+import flask from '../flask.svg'
+import java from '../java.svg'
+import javaS from '../javascript.svg'
+import csharp from '../c_sharp.svg'
+import dotnet from '../dotnet.svg'
+import gitt from '../git.svg'
+import gcpp from '../gcp.svg'
+import htmll from '../html.svg'
+import csss from '../css.svg'
+import react from '../react.svg'
+import tsf from '../tensorflow.svg'
+import sqlserver from '../sql-server.svg'
+import mysqll from '../mysql.svg'
 
 
 function Skills() {
@@ -125,7 +125,7 @@ function Skills() {
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={nodejs} alt="nodejs-logo"/>
+                                    <img src={react} alt="react-logo"/>
                                 </div>
                             </div>
                             
