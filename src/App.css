@@ -2,11 +2,12 @@
 
 :root{
   --primary-white:#ffffff;
-  --primary-orange:#f9ab00;
+  --primary-orange:#fa9579;
   --primary-dark:#ffffff00;
-  --primary-green:#39ff14;
+  --primary-green:#91d18b;
   --primary-red:#ef4035;
-  --primary-blue:#3366cc;
+  --primary-blue:#84c1ff;
+  --secondary-blue:#6a097d;
   --primary-dark-green:#70af85;
 }
 
@@ -83,9 +84,9 @@ button:hover{
 .header-wrapper{
   position:relative;
   /* background: url(watercolor_bg.jpg) no-repeat; */
-  background: url(vector_mountains_bg.jpg) no-repeat;
-  background-size: cover ;
-  background-position: center;
+  background: url(tree_bg.jpg) no-repeat;
+  background-size: 50% 50% ;
+  background-position: top;
   height: 90vh;
 }
 
@@ -155,6 +156,7 @@ button:hover{
   transform: scale(1.2) !important;
   border: 0.2rem solid var(--primary-green);
   color: var(--primary-orange);
+  background-color: var(--secondary-blue);
 }
 
 .header-wrapper > .main-info > a:active, .header-wrapper > .main-info > a:focus{
@@ -175,8 +177,8 @@ button:hover{
   text-transform: uppercase !important;
 }
 .about-me{
-  margin: 3rem 0 5rem 0;
-  padding: 8rem 5rem;
+  margin: 5rem 0 5rem 0;
+  padding: 5rem 5rem;
 }
 .img-fluid{
   margin-right: 2rem;
@@ -213,7 +215,7 @@ p.about-para{
 }
 
 .skills-area{
-  margin: 3rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   padding: 1rem 5rem;
 }
 
@@ -266,7 +268,7 @@ p.about-para{
 
 /***************** EXTRAS *****************/
 .extras-area{
-  margin: 3rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   padding: 3rem 0;
 }
 
@@ -282,6 +284,7 @@ p.about-para{
 }
 p.extras-para{
   color:var(--primary-dark-green);
+  margin-bottom: 3rem;
   font: normal bold 1rem/1.5625rem 'Cutive Mono', monospace;
 }
 
@@ -314,7 +317,7 @@ p.extras-para{
 
 /******************** Projects ************************/
 .project-area{
-  margin: 3rem 0 5rem 0;
+  margin: 5rem 0 5rem 0;
   padding: 3rem 0;
 }
 .title-h1{
@@ -401,3 +404,44 @@ p.extras-para{
 
 
 
+/************* ACHIEVEMENTS ****************/
+.achievements-area{
+  margin: 5rem 0 5rem 0;
+  padding: 3rem 0;
+}
+.achievements-area .container-fluid .row .achievements-title > h2{
+  display: block;
+  letter-spacing: 0.125rem;
+  font: normal 400 2.0625rem/2.75rem 'Syne Mono', monospace ;
+}
+
+.achievements-area .owl-carousel .achievement {
+  padding: 0.5rem;
+  margin: 1rem 1rem !important;
+  border-left: 3px solid var(--primary-dark-green);
+  box-shadow: 0 0 15px var(--primary-dark-green) inset; 
+}
+
+.achievements-area .owl-carousel{
+  border-top: 3px dashed var(--secondary-blue) ;
+  border-bottom: 3px dashed var(--secondary-blue) ;
+}
+
+.achieve-para{
+  color:var(--primary-dark-green);
+  font: normal bold 1rem/1.5625rem 'Cutive Mono', monospace;
+}
+
+.achievements-area .carousel .owl-carousel .achievement .about-achieve >h4{
+  display: block;
+  letter-spacing: 0.125rem;
+  font: normal 600 1.0625rem/1.75rem 'Syne Mono', monospace ; 
+}
+
+.achievements-area .carousel .owl-carousel .achievement .achieve-img > img{
+  width: 5rem;
+  height: 5rem;
+  margin:0 !important;
+  align-items: center;
+  padding: 0.5rem;
+}
