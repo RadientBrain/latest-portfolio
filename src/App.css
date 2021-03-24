@@ -14,6 +14,11 @@ body {
   font-family: 'Cutive Mono', monospace;
 }
 
+hr{
+  width: 50%;
+  color: var(--primary-red);
+  border: 0.05rem solid !important;
+}
 
 /************************NAVBAR************************/
 
@@ -125,7 +130,7 @@ button:hover{
 .typed-text{
   z-index: 2;
   font-weight:bolder;
-  font-size:2rem;
+  font-size:1rem;
 }
 
 /*-------- Resume Download --------*/
@@ -170,6 +175,7 @@ button:hover{
   text-transform: uppercase !important;
 }
 .about-me{
+  margin: 3rem 0 5rem 0;
   padding: 8rem 5rem;
 }
 .img-fluid{
@@ -195,7 +201,6 @@ p.about-para{
 }
 
 /*********************** SKILLS *********************/
-
 .outer-sibling{
   border-left: 2px solid var(--primary-blue);
   border-radius: 2rem !important;
@@ -208,8 +213,8 @@ p.about-para{
 }
 
 .skills-area{
+  margin: 3rem 0 5rem 0;
   padding: 1rem 5rem;
-  margin-bottom:4rem;
 }
 
 .exp-skills{
@@ -260,6 +265,11 @@ p.about-para{
 }
 
 /***************** EXTRAS *****************/
+.extras-area{
+  margin: 3rem 0 5rem 0;
+  padding: 3rem 0;
+}
+
 .extras-title{
   font-family: 'Syne Mono', monospace !important;
   font-size: 2.5rem;
@@ -301,5 +311,93 @@ p.extras-para{
   transform: scale(1.04);
   z-index:1;
 }
+
+/******************** Projects ************************/
+.project-area{
+  margin: 3rem 0 5rem 0;
+  padding: 3rem 0;
+}
+.title-h1{
+  padding: 4rem 0rem 1rem 0rem;
+}
+.project-area .container .grid .element-item, .project-img{
+  padding:1rem !important;
+  align-items: center;
+  text-align: center;
+}
+.project-area .btn-group button{
+  background: transparent;
+  border: none;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.25rem;
+  color: var(--primary-red);
+  font: normal 900 1rem/2rem 'Cutive Mono', monospace;
+  text-transform: uppercase;
+}
+
+.project-area .btn-group button:hover{
+  border-top: 0.225rem solid var(--primary-dark-green);
+}
+
+.project-title{
+  font-family: 'Syne Mono', monospace !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-area .container .grid .element-item .our-project .project-img .test-popup-link > img{
+  width:10rem !important;
+  height:10rem !important;
+  transition: box-shadow .99s ease;
+}
+
+.project-area .container .grid .element-item .our-project{
+  transition: box-shadow .3s ease;
+}
+
+.project-area .container .grid .element-item .our-project:hover{
+  transform: scale(1.01);
+  box-shadow: 5px 10px 10px 5px var(--primary-dark-green);
+}
+
+.project-area .container .grid .element-item .our-project:hover .project-img{
+  transition: box-shadow .6s ease;
+}
+
+.project-area .container .grid .element-item .our-project:hover .project-img,
+.project-area .container .grid .element-item .our-project:hover ~ .project-img{
+  transform: scale(0.9);
+  box-shadow: 5px 10px 10px 5px var(--primary-dark-green);
+}
+
+.project-area .container .grid .element-item .our-project:hover .project-img .test-popup-link img, 
+.project-area .container .grid .element-item .our-project:hover .project-img .test-popup-link ~ img{
+  transform: scale(1.03);
+  box-shadow: 5px 5px 5px 5px var(--primary-dark-green);
+}
+
+.project-area .container .grid .element-item .our-project .title>h4{
+  font-family: 'Syne Mono', monospace !important;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-area .container .grid .element-item .our-project .title>span{
+  font-family: 'Cutive Mono', monospace !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-area .container .grid .element-item .our-project .project-img .btn-link > button{
+  color: var(--primary-red);
+  text-decoration: none !important;
+  border-radius: 50%; 
+  box-shadow: 5px 10px 10px 5px var(--primary-dark-green);
+}
+
 
 

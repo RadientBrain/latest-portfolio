@@ -5,7 +5,9 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects'
 import Extras from './components/Extras';
+
 
 function App() {
   return (
@@ -115,9 +117,10 @@ function App() {
     />
     <Navbar/>
     <Header/>
-    <About/>
-    <Skills/>
-    <Extras/>
+    <About/><hr/>
+    <Skills/><hr/>
+    <Projects/><hr/>
+    <Extras/><hr/>
     </>
   );
 }
