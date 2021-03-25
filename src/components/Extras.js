@@ -5,7 +5,7 @@ import magic_castle from '../magic-castle.jpg'
 
 function Extras() {
     return (
-        <section className="extras-area">
+        <section id='extras_' className="extras-area">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">

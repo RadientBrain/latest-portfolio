@@ -4,13 +4,12 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
-import footerimg from '../icy-mountain_bg.jpg'
 
 function Footer() {
     return (
         <div class="footer-basic">
             <div className="go-top text-center">
-                <a href="#">
+                <a href="#home_">
                     <div className="col-12 text-center">
                         <div className="row-12">
                         <FontAwesomeIcon icon={faArrowUp} size='2x' filter='drop-shadow(0 10px 0 var(--primary))'/>
@@ -24,18 +23,18 @@ function Footer() {
             </div>
         <footer>
             <div class="social">
-                <a href="#"><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a href="#"><FontAwesomeIcon icon={faGithub}/></a>
-                <a href="#"><FontAwesomeIcon icon={faWhatsapp}/></a>
+                <a href="https://www.linkedin.com/in/chetan-maheshwari-125aa4184/"><FontAwesomeIcon icon={faLinkedin}/></a>
+                <a href="https://github.com/RadientBrain"><FontAwesomeIcon icon={faGithub}/></a>
+                <a href="https://wa.me/919057211152"><FontAwesomeIcon icon={faWhatsapp}/></a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Skills</a></li>
-                <li class="list-inline-item"><a href="#">Projects</a></li>
-                <li class="list-inline-item"><a href="#">Achievements</a></li>
-                <li class="list-inline-item"><a href="#">Extras</a></li>
-                <li class="list-inline-item"><a href="#">Contact</a></li>
+                <li class="list-inline-item"><a href="#home_">Home</a></li>
+                <li class="list-inline-item"><a href="#about_">About</a></li>
+                <li class="list-inline-item"><a href="#skills_">Skills</a></li>
+                <li class="list-inline-item"><a href="#projects_">Projects</a></li>
+                <li class="list-inline-item"><a href="#achievements_">Achievements</a></li>
+                <li class="list-inline-item"><a href="#extras_">Extras</a></li>
+                <li class="list-inline-item"><a href="#contact_">Contact</a></li>
             </ul>
             <p class="copyright">Copyright &copy; 2021 | All Rights Reserved</p>
         </footer>

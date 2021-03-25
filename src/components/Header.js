@@ -4,7 +4,7 @@ import profilePic from '../profile.png'
 
 const Header = () => {
     return (
-    <section className="header">
+    <section id='home_' className="header">
             
         <div className="header-wrapper">
             <div className="main-info">
@@ -28,7 +28,7 @@ const Header = () => {
                     />
                 </b>
 
-                <a href="#" className="btn-resume-download-link">  Resume </a>
+                <a href="../Resume/my_resume.pdf" className="btn-resume-download-link">  Resume </a>
             </div>
         </div>
     </section>

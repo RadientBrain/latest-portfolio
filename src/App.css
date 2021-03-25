@@ -11,6 +11,9 @@
   --primary-dark-green:#70af85;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Cutive Mono', monospace;
@@ -22,12 +25,42 @@ hr{
   color: var(--primary-red);
   border: 0.05rem solid !important;
 }
+/******************* SCROLL BAR ******************/
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-blue) var(--primary-orange);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary-orange);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-blue);
+  border-radius: 20px;
+  border: 3px solid var(--primary-orange);
+}
+
 
 /************************NAVBAR************************/
 
-nav{
-  z-index: 1;
+.drop-shadow{
+  box-shadow: 0px 1px 10px #000;
 }
+
+nav{
+  z-index: 10;
+  position : sticky;
+  top:0;
+}
+
 
 .logo {
   width: 2.1875rem;
@@ -53,7 +86,7 @@ nav ul li{
 }
 
 .navbar-nav > li > a:hover{
-  border-top: 0.1875rem solid var(--primary-green);
+  border-top: 0.1875rem solid var(--secondary-blue);
   color: var(--primary-orange) !important;
 }
 
@@ -91,7 +124,7 @@ button:hover{
   overflow: hidden;
   z-index: 1;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 756px) {
   .header{
     position:relative;
     background: url(header-clouds.svg) repeat-x scroll top transparent;
@@ -99,6 +132,9 @@ button:hover{
     background-position: bottom;
     overflow: hidden;
     z-index: 1;
+  }
+  .profile-pic{
+    transform: scale(0.7);
   }
 }
 .header-wrapper{
@@ -228,7 +264,7 @@ p.about-para{
   border-radius: 2rem !important;
 }
 
-.skills-area .container-fluid .single-skill > img{
+.skills-area .container-fluid .single-skill a > img{
   width : 6rem;
   height : 6rem;
   padding : 0.5rem;
@@ -273,7 +309,7 @@ p.about-para{
   border-bottom-left-radius: 3rem;
 }
 
-.skills-area .outer-sibling .col-lg-4 > .single-skill > img{
+.skills-area .outer-sibling .col-lg-4 > .single-skill a > img{
   width: 50%;
 }
 
@@ -282,7 +318,7 @@ p.about-para{
   transform: scale(1.07);
 }
 
-.exp-skills:hover, .skills-area .outer-sibling .col-lg-4 > .single-skill:hover > img{
+.exp-skills:hover, .skills-area .outer-sibling .col-lg-4 > .single-skill:hover a > img{
   filter:brightness(0.8);
 }
 
@@ -474,11 +510,11 @@ p.extras-para{
 
 /************************** CONTACT ************************/
 .contact-area{
-  margin: 5rem 0 5rem 0;
+  margin: 5rem 0 2rem 0;
   padding: 3rem 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 756px) {
   .contact-area .contact .row .contact-title > h4{
     transform: scale(0.8);
   }

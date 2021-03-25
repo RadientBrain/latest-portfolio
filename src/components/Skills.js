@@ -21,7 +21,7 @@ import mysqll from '../mysql.svg'
 
 function Skills() {
     return (
-        <section className="skills-area">
+        <section id='skills_' className="skills-area">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-xl-6 col-lg-12 col-md-12">
@@ -38,94 +38,94 @@ function Skills() {
                             
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={python} alt="python-logo"/>
+                                    <a href="https://www.python.org/"><img src={python} alt="python-logo"/></a>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={cpp} alt="cpp-logo"/>
+                                <a href="https://www.cplusplus.com/"><img src={cpp} alt="cpp-logo"/></a>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={tsf} alt="tensorflow-logo"/>
+                                <a href="https://www.tensorflow.org/"><img src={tsf} alt="tensorflow-logo"/></a>
                                 </div>
                             </div>
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={gcpp} alt="gcp-logo"/>
+                                <a href="https://cloud.google.com/"><img src={gcpp} alt="gcp-logo"/></a>
                                 </div>
                             </div>
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={gitt} alt="git-logo"/>
+                                <a href="https://git-scm.com/"><img src={gitt} alt="git-logo"/></a>
                                 </div>
                             </div>
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={mysqll} alt="mysql-logo"/>
+                                <a href="https://www.mysql.com/"><img src={mysqll} alt="mysql-logo"/></a>
                                 </div>
                             </div>
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={java} alt="java-logo"/>
+                                <a href="https://www.java.com/"><img src={java} alt="java-logo"/></a>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={javaS} alt="javascript-logo"/>
-                                </div>
-                            </div>
-                            
-
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="single-skill">
-                                    <img src={csharp} alt="csharp-logo"/>
+                                <a href="https://www.javascript.com/"><img src={javaS} alt="javascript-logo"/></a>
                                 </div>
                             </div>
                             
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={dotnet} alt="dotnet-logo"/>
+                                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img src={csharp} alt="csharp-logo"/></a>
                                 </div>
                             </div>
                             
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={sqlserver} alt="sqlserver-logo"/>
+                                <a href="https://docs.microsoft.com/en-us/dotnet/"><img src={dotnet} alt="dotnet-logo"/></a>
                                 </div>
                             </div>
                             
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={htmll} alt="html-logo"/>
+                                <a href="https://docs.microsoft.com/en-us/sql/sql-server/"><img src={sqlserver} alt="sqlserver-logo"/></a>
+                                </div>
+                            </div>
+                            
+
+                            <div className="col-lg-4 col-md-6 col-sm-6">
+                                <div className="single-skill">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src={htmll} alt="html-logo"/></a>
                                 </div>
                             </div>
                             
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={csss} alt="csss-logo"/>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src={csss} alt="csss-logo"/></a>
                                 </div>
                             </div>
 
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={flask} alt="flask-logo"/>
+                                <a href="https://flask.palletsprojects.com/"><img src={flask} alt="flask-logo"/></a>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="single-skill">
-                                    <img src={react} alt="react-logo"/>
+                                <a href="https://reactjs.org/"><img src={react} alt="react-logo"/></a>
                                 </div>
                             </div>
                             

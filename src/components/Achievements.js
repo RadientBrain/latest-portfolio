@@ -7,7 +7,7 @@ import jpmorgan from '../jp-morgan1.jpg'
 
 function Achievements() {
     return (
-    <section className="achievements-area">
+    <section id='achievements_' className="achievements-area">
         <div className="container-fluid">
             <div className="row text-center">
                 <div className="col-12">

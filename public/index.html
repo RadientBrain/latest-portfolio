@@ -118,7 +118,16 @@ crossorigin="anonymous">
       });
     });
 
+    $(document).ready(function(){
 
+      var checkScrollBar = function(){
+        $('.navbar').css({
+          backgroundColor: $(this).scrollTop() > 100 ?
+            '#91d18b' : '#84c1ff'
+        })
+      }
+      $(window).on('load resize scroll', checkScrollBar)
+      });
 </script>
 
 </body>

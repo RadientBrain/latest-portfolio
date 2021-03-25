@@ -4,7 +4,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
     return (
-        <section className="contact-area">
+        <section id='contact_' className="contact-area">
             <div className="container-fluid contact">
                 <div className="row">
                     <div className="col-12 text-center contact-title">

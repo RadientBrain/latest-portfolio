@@ -3,7 +3,7 @@ import study from '../study.svg'
 
 function About() {
     return (
-        <section className="about-me">
+        <section className="about-me" id='about_'>
 
             <div className="container-fluid">
                 <div className="row">
@@ -27,7 +27,7 @@ function About() {
                             </div>
                            <div className="row-lg-2 row-sm-6">
                                
-                            <a href="#" className="btn-resume-download-link">Contact</a>
+                            <a href="#contact_" className="btn-resume-download-link">Contact</a>
                            </div>
                             </div>
                         </div>
