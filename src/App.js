@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Extras from './components/Extras';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
     <Achievements/>
     <Extras/>
     <Contact/>
+    <Footer/>
     </>
   );
 }
