@@ -35,7 +35,7 @@ hr{
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 0.75rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -44,16 +44,16 @@ hr{
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--secondary-blue);
-  border-radius: 20px;
-  border: 3px solid var(--primary-orange);
+  border-radius: 1.25rem;
+  border: 0.188rem solid var(--primary-orange);
 }
 
 
 /************************NAVBAR************************/
-
 .drop-shadow{
   box-shadow: 0px 1px 10px #000;
 }
+
 
 nav{
   z-index: 10;
@@ -61,6 +61,16 @@ nav{
   top:0;
 }
 
+nav .container .collapse ul li{
+  
+}
+
+#exampleModalLabel{
+  font-family: 'Syne Mono', monospace !important;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
 
 .logo {
   width: 2.1875rem;
@@ -77,6 +87,121 @@ nav a.nav-link{
 
 nav ul li{
   text-transform: uppercase;
+}
+
+nav ul li .modal .modal-dialog .modal-content{
+  
+  background-color:#fa9579cc;
+}
+
+nav ul li .modal .modal-dialog{
+  text-transform: none;
+}
+
+.weather-report{
+  background: url(weather-cold.jpg) no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+.weather-report.warm{
+  background: url(weather-warm3.jpg) no-repeat;
+}
+
+.weather-report main{
+  min-height: 50vh;
+  padding:1.563rem; 
+  font-family: 'Cutive Mono', monospace;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.65));
+}
+
+.weather-report main .search-box{
+  width: 100%;
+  margin: 0 0 4.688rem;
+}
+
+.weather-report main .search-box input::placeholder{
+  color:#000;
+}
+
+.weather-report main .search-box .search-bar{
+  display: block;
+  width: 100%;
+  padding: 0.938rem;
+  
+  font-weight: 600;
+  
+  appearance: none;
+  background:none;
+  border: none;
+  outline: none;
+  
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -1.563rem;
+
+  box-shadow: 0 0.2rem rgba(0,0,0,0.5 );
+  color: #313131;
+  font-size: 0.9rem;
+  transition:0.4s ease;
+}
+
+.weather-report main .data-wrapper .location-box{
+  color: var(--primary-white);
+  text-shadow: 0.188rem 0.188rem rgba(50,50,70,0.5);
+}
+
+.weather-report main .data-wrapper .location{
+  font-size: 1.5rem;
+  font-weight:700;
+}
+
+.weather-report main .data-wrapper .date{
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.188rem;
+}
+
+.weather-report main .data-wrapper .weather-box{
+  color:var(--primary-white);
+  text-shadow: 0.188rem 0.188rem rgba(50,50,70,0.5);
+}
+
+.weather-report main .data-wrapper .weather-box .weather-icon > img{
+  position: relative;
+  display: inline-block;
+  margin: 0.225rem auto;
+  border-radius: 0.575rem;
+  padding:0.2rem;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow:0.188rem 0.188rem rgba(0,0,0,0.2); 
+}
+
+.weather-report main .data-wrapper .weather-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 0.825rem auto;
+  background-color: rgba(255,255,255,0.2);
+
+  border-radius: 0.875rem;
+
+  font-size:3.25rem;
+  font-weight: 900 ;
+
+  padding:0.5rem;
+
+  text-align: center;
+  box-shadow:0.188rem 0.188rem rgba(0,0,0,0.2); 
+}
+
+.weather-report main .data-wrapper .weather-box .weather{
+  font-size:1.5rem;
+  font-weight:600;
+  text-shadow: 0.188 0.188 rgba(50,50,70,0.5);
+}
+
+.weather-report main .data-wrapper .search-box .search-bar:focus{
+  background-color: rgba(255,255,255,0.75);
 }
 
 .navbar-nav > li > a{
@@ -124,7 +249,7 @@ button:hover{
   overflow: hidden;
   z-index: 1;
 }
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 520px) {
   .header{
     position:relative;
     background: url(header-clouds.svg) repeat-x scroll top transparent;

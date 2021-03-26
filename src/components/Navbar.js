@@ -1,14 +1,103 @@
-import React from 'react';
+import React, { useState , useEffect} from 'react';
 import mylogo from '../radientbrain_logo.png';
+import axios from 'axios';
 //Importing react font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faCog } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
+
+
+const api = {
+    key: "143b7c10229d7963df710f79c05c14c8",
+    base: "http://api.openweathermap.org/data/2.5/weather?"
+}
+
+function WeatherReport() {
+
+
+    const [city, setCity] = useState('');
+    const [weather, setWeather] = useState({});
+
+
+    const search = evt => {
+        if(evt.key === "Enter"){
+            axios.get(`${api.base}q=${city}&appid=${api.key}`)
+            .then(res => res.data)
+            .then(result => {
+                setWeather(result);
+                setCity('');
+                console.log(result);
+            })
+            .catch(function(error){
+                alert(error);
+            });
+
+        }
+    }
+
+
+    const dateBuilder = (d) => {
+        let months= ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+        'August', 'September', 'October', 'November', 'December'];
+        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"];
+        
+        let day = days[d.getDay()];
+        let date = d.getDate();
+        let month = months[d.getMonth()];
+        let year = d.getFullYear();
+
+        return `${day} ${date} ${month} ${year}`
+    } 
+
+    return ( 
+        <div className={(typeof weather.main != "undefined") ? ((weather.main.temp>(16+273.15)) ? 'weather-report warm' : 'weather-report') : 'weather-report'}>
+
+            <main>
+                <div className="search-box">
+                    
+                    <input 
+                    type="text" 
+                    className="search-bar" 
+                    onChange={ e => setCity(e.target.value) } 
+                    value={city}
+                    onKeyPress={search}
+                    placeholder="Search City..."
+                    />
+                </div>
+                {(typeof weather.main != "undefined") ? (
+                    <div className="data-wrapper">
+                        <div className="location-box">
+                            <div className="location">
+                                {weather.name}, {weather.sys.country}
+                            </div>
+                            <div className="date">
+                                {dateBuilder(new Date())}
+                            </div>
+                        </div>
+                        <div className="weather-box">
+                            <div className="temp">
+                                {parseFloat(weather.main.temp-273.15).toFixed(0)}&deg;C
+                            </div>
+                            <div className="weather-icon">
+                            <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="weather-icon"/>
+                            </div>
+                            <div className="weather">
+                                {weather.weather[0].main}
+                            </div>
+                        </div>
+                    </div>
+                ): ('')}
+            </main>
+
+        </div>
+     );
+}
 
 const Navbar = () => {
     return (
         <nav className="navbar drop-shadow navbar-expand-lg navbar-dark" style={{backgroundColor:'#3366cc', position: "sticky"}} fixed="top">
-
         <div className="container">
 
         
@@ -40,13 +129,41 @@ const Navbar = () => {
             <li className="nav-item active">
                 <a className="nav-link" href="#contact_">Contact</a>
             </li>
+            <li className="nav-item active">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-backdrop="false">
+                    <FontAwesomeIcon icon={ faCog } spin size="2x" style={{animationDuration:'4s' }}/>
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title w-100" id="exampleModalLabel">Weather Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <WeatherReport/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" style={{font:"normal 900 1rem/1.5rem 'Cutive Mono', monospace"}} data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                   
+            </li>
 
             
             </ul>
 
         </div>
         </div>
+
         </nav>
+        
     )
 }
 
