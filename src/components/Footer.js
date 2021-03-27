@@ -7,7 +7,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
     return (
-        <div class="footer-basic">
+        <div className="footer-basic">
             <div className="go-top text-center">
                 <a href="#home_">
                     <div className="col-12 text-center">
@@ -22,21 +22,21 @@ function Footer() {
                 </a>
             </div>
         <footer>
-            <div class="social">
+            <div className="social">
                 <a href="https://www.linkedin.com/in/chetan-maheshwari-125aa4184/"><FontAwesomeIcon icon={faLinkedin}/></a>
                 <a href="https://github.com/RadientBrain"><FontAwesomeIcon icon={faGithub}/></a>
                 <a href="https://wa.me/919057211152"><FontAwesomeIcon icon={faWhatsapp}/></a>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#home_">Home</a></li>
-                <li class="list-inline-item"><a href="#about_">About</a></li>
-                <li class="list-inline-item"><a href="#skills_">Skills</a></li>
-                <li class="list-inline-item"><a href="#projects_">Projects</a></li>
-                <li class="list-inline-item"><a href="#achievements_">Achievements</a></li>
-                <li class="list-inline-item"><a href="#extras_">Extras</a></li>
-                <li class="list-inline-item"><a href="#contact_">Contact</a></li>
+            <ul className="list-inline">
+                <li className="list-inline-item"><a href="#home_">Home</a></li>
+                <li className="list-inline-item"><a href="#about_">About</a></li>
+                <li className="list-inline-item"><a href="#skills_">Skills</a></li>
+                <li className="list-inline-item"><a href="#projects_">Projects</a></li>
+                <li className="list-inline-item"><a href="#achievements_">Achievements</a></li>
+                <li className="list-inline-item"><a href="#extras_">Extras</a></li>
+                <li className="list-inline-item"><a href="#contact_">Contact</a></li>
             </ul>
-            <p class="copyright">Copyright &copy; 2021 | All Rights Reserved</p>
+            <p className="copyright">Copyright &copy; 2021 | All Rights Reserved</p>
         </footer>
     </div>
     )

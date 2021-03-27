@@ -18,7 +18,7 @@ function Contact() {
                         <div className="row d-flex flex-row flex-wrap">
                             <div className="col input-textbox">
                                 <input type="text" className="form-control" id="txtmail" placeholder="Your Email"/>
-                                <textarea class="form-control" aria-label="message-box" placeholder="Type you message here"></textarea>
+                                <textarea className="form-control" aria-label="message-box" placeholder="Type you message here"></textarea>
                                 <div className="col">
                                     <div className="btn-submit">
                                         <button type="submit" className="btn btn-success float-center">Send  <FontAwesomeIcon icon={faPaperPlane} /></button>

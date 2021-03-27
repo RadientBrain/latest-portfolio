@@ -28,7 +28,7 @@ const Header = () => {
                     />
                 </b>
 
-                <a href="../Resume/my_resume.pdf" className="btn-resume-download-link">  Resume </a>
+                <a href="https://github.com/RadientBrain/Public_Resume/raw/main/PersonalResume.pdf" className="btn-resume-download-link">  Resume </a>
             </div>
         </div>
     </section>

@@ -22,7 +22,7 @@ function Achievements() {
         </div>
 
         <div className="container-fluid carousel py-5">
-        <div class="owl-carousel owl-theme">
+        <div className="owl-carousel owl-theme">
             <div className="achievement row">
                 <div className="col-lg-4 col-md-12 col-sm-12 achieve-img">
                     <img src={nptel} alt="nptel logo" className="img-fluid"/>

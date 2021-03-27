@@ -14,7 +14,7 @@ function Projects() {
                         <b>My Recently done Projects</b>
                     </h1>
                 </div>
-                <div class='wrapper text-center'>
+                <div className='wrapper text-center'>
                     <div className="btn-group row" role="group">
                         <button type="button" id="btn-all" data-filter="*" className="active col-sm">All</button>
                         <button type="button" data-filter=".popular" className=" col-sm">Popular</button> 

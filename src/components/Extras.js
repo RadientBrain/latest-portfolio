@@ -20,7 +20,7 @@ function Extras() {
 
                 <div className="card-deck">
                     <div className="card">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9">
                         <img className="card-img-top embed-responsive-item" src={hacking} alt="hacking-card"/>
                     </div>
                         <div className="card-body">
@@ -30,7 +30,7 @@ function Extras() {
                     </div>
 
                     <div className="card">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9">
                         <img className="card-img-top embed-responsive-item" src={alien_mars} alt="alien-card"/>
                     </div>
                         <div className="card-body">
@@ -40,7 +40,7 @@ function Extras() {
                     </div>
 
                     <div className="card">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div className="embed-responsive embed-responsive-16by9">
                         <img className="card-img-top embed-responsive-item" src={magic_castle} alt="magic-castle card"/>
                     </div>
                         <div className="card-body">
