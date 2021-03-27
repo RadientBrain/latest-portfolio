@@ -60,8 +60,7 @@ crossorigin="anonymous">
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -124,6 +123,8 @@ crossorigin="anonymous">
       });
     });
 
+
+    //CUSTOM NAVBAR ON SCROLL
     $(document).ready(function(){
 
       var checkScrollBar = function(){
@@ -135,6 +136,9 @@ crossorigin="anonymous">
       $(window).on('load resize scroll', checkScrollBar)
       }); 
       
+
+
+      // PLOTLY GRAPH
       $(function(){
         $('#remove-graph').click(function(){
           Plotly.purge('chart');
@@ -186,6 +190,40 @@ crossorigin="anonymous">
       }catch(e){
         console.log(e);
       }
+    });
+
+
+    //CONTACT FORM
+    var submitted=false;
+    
+    $(function(){
+      $('#gform').on('submit', function(e) {
+        var email = document.forms["gform"]["entry.1675495836"].value;
+        var msg = document.forms["gform"]["entry.483319533"].value;
+        if (email == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+        else if(msg == ""){
+          alert("Message must be filled out");
+          return false;
+        }
+        else{          
+          
+          var regex = /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+          if(regex.test(email)){
+            $('#gform *').fadeOut(1000);
+            $('#gform').prepend('<div id="box-cntr" className="row d-flex flex-row flex-wrap"><div className="col"><h4 id="contact-greet">Thank You for Contacting. Your Response has been Submitted...</h4><p>Wanna send more messages? <u>Please Refresh the page and submit a new response message</u> </p></div></div>');
+          }
+          else{
+            alert("This is not a valid email address");
+            return false;
+          }
+                    
+        }
+        });
+
+
     });
 
 

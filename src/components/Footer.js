@@ -4,6 +4,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faBloggerB} from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
     return (
@@ -23,9 +24,10 @@ function Footer() {
             </div>
         <footer>
             <div className="social">
-                <a href="https://www.linkedin.com/in/chetan-maheshwari-125aa4184/"><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a href="https://github.com/RadientBrain"><FontAwesomeIcon icon={faGithub}/></a>
-                <a href="https://wa.me/919057211152"><FontAwesomeIcon icon={faWhatsapp}/></a>
+                <a href="https://www.linkedin.com/in/chetan-maheshwari-125aa4184/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                <a href="https://github.com/RadientBrain" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+                <a href="https://wa.me/919057211152" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp}/></a>
+                <a href="https://radientbrain.blogspot.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faBloggerB}/></a>
             </div>
             <ul className="list-inline">
                 <li className="list-inline-item"><a href="#home_">Home</a></li>
@@ -36,7 +38,7 @@ function Footer() {
                 <li className="list-inline-item"><a href="#extras_">Extras</a></li>
                 <li className="list-inline-item"><a href="#contact_">Contact</a></li>
             </ul>
-            <p className="copyright">Copyright &copy; 2021 | All Rights Reserved</p>
+            <p className="copyright">Copyright &copy;2021 | All Rights Reserved | Chetan Maheshwari</p>
         </footer>
     </div>
     )

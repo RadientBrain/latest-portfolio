@@ -32,7 +32,7 @@ function Projects() {
                                     <img src={Devices} alt="projects-show1"/>
                                 </a>  
                                 <div className="col btn-link">
-                                    <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button>
+                                  <a href="" target="_blank" rel="noopener noreferrer"><button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button></a>
                                 </div>     
                             </div>
                             <div className="title py-4"> 
@@ -49,11 +49,11 @@ function Projects() {
                                     <img src={Devices1} alt="projects-show2"/>
                                 </a>
                                 <div className="col btn-link">
-                                    <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button>
+                                <a href="https://github.com/RadientBrain/2nd-Year-College-project" target="_blank" rel="noopener noreferrer"><button type="button" className="primary row-sm-12"> <FontAwesomeIcon icon={faLink} /></button></a>
                                 </div> 
                             </div>
                             <div className="title py-4"> 
-                                <h4>Vision-Helper</h4>
+                                <h4>Traffic Management System</h4>
                                 <span className="text-secondary">Popular,Portfolio</span>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function Projects() {
                                     <img src={Devices} alt="projects-show3"/>
                                 </a>  
                                 <div className="col btn-link">
-                                    <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button>
+                                   <a href="" target="_blank" rel="noopener noreferrer"> <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button></a>
                                 </div> 
                             </div>
                             <div className="title py-4"> 

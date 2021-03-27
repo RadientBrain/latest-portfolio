@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
+
 function Contact() {
     return (
         <section id='contact_' className="contact-area">
@@ -14,19 +15,20 @@ function Contact() {
                 </div>
 
                 <div className="d-sm-flex justify-content-center input-fields text-center">
-                    <form className="w-50">
+                    <form name="gform" id="gform" className="w-50" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfJEqK0oKRDMFUsBTRobUYWGpLODTQ1X1K6VWoglF-AaJ6AqA/formResponse?" >
                         <div className="row d-flex flex-row flex-wrap">
                             <div className="col input-textbox">
-                                <input type="text" className="form-control" id="txtmail" placeholder="Your Email"/>
-                                <textarea className="form-control" aria-label="message-box" placeholder="Type you message here"></textarea>
+                                <input id="entry.1675495836" name="entry.1675495836" type="text" className="form-control" placeholder="Your Email"/>
+                                <textarea id="entry.483319533" name="entry.483319533" className="form-control" aria-label="message-box" placeholder="Type you message here"></textarea>
                                 <div className="col">
                                     <div className="btn-submit">
-                                        <button type="submit" className="btn btn-success float-center">Send  <FontAwesomeIcon icon={faPaperPlane} /></button>
+                                        <button id="magic-submit" value="Submit" type="submit" className="btn btn-success float-center">Send  <FontAwesomeIcon icon={faPaperPlane} /></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    <div dangerouslySetInnerHTML={{__html:  '<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>'}} />
                 </div>
             </div>
         </section>
