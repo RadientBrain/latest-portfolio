@@ -59,7 +59,7 @@ function Projects() {
                                 </a>  
                                 <div className="col btn-link">
                                   <a href="https://github.com/RadientBrain/latest-portfolio" target="_blank" rel="noopener noreferrer"><button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faGithub} /></button></a>
-                                  <a href="https://github.com/RadientBrain/latest-portfolio" target="_blank" rel="noopener noreferrer"> <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button></a>
+                                  <a href="https://radientbrain.github.io/latest-portfolio/" target="_blank" rel="noopener noreferrer"> <button type="button" className="primary row-sm-12"><FontAwesomeIcon icon={faLink} /></button></a>
                                 </div>     
                             </div>
                             <div className="title py-4"> 

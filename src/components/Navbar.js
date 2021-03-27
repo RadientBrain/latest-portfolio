@@ -8,7 +8,7 @@ import { faCog } from '@fortawesome/free-solid-svg-icons'
 
 const api = {
     key: "143b7c10229d7963df710f79c05c14c8",
-    base: "http://api.openweathermap.org/data/2.5/weather?"
+    base: "https://api.openweathermap.org/data/2.5/weather?"
 }
 
 function WeatherReport() {
