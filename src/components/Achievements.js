@@ -54,7 +54,7 @@ function Achievements() {
                 <div className="col-lg-8 col-md-12 col-sm-12 about-achieve">
                     <h4>2nd Rank Holder</h4>
                     <p className="achieve-para">
-                    Secured 2nd Rank in Codacharya 2020 (Annual Coding Competition of IIIT Kalyani)
+                    Secured 2nd Rank in Codacharya 2020 (Annual Coding Competition of IIIT Kalyani) and got some cash prize for it :)
                     </p>
                 </div>
             </div>
@@ -65,7 +65,7 @@ function Achievements() {
                 <div className="col-lg-8 col-md-12 col-sm-12 about-achieve">
                     <h4>Founding Secretary</h4>
                     <p className="achieve-para">
-                    I am the Founding Secretary of Swimming Club, IIIT Kalyani which was founded in 2019
+                    I am the Founding Secretary of Swimming Club at IIIT Kalyani via Election Poll and this club was founded in 2019.
                     </p>
                 </div>
             </div>

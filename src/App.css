@@ -63,7 +63,7 @@ hr{
 
 @media screen and (max-width: 520px){
   #chart{
-
+    transform: scale(0.8);
   }
 }
 
