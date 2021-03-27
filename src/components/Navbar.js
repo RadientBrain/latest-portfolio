@@ -5,9 +5,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faCog } from '@fortawesome/free-solid-svg-icons'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-
-
+import Plot  from 'react-plotly.js';
 
 const api = {
     key: "143b7c10229d7963df710f79c05c14c8",
@@ -95,6 +93,11 @@ function WeatherReport() {
      );
 }
 
+const getPlotData = () => {
+    return Math.random();
+}
+
+
 const Navbar = () => {
     return (
         <nav className="navbar drop-shadow navbar-expand-lg navbar-dark" style={{backgroundColor:'#3366cc', position: "sticky"}} fixed="top">
@@ -135,24 +138,50 @@ const Navbar = () => {
                     </button>
 
                     <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h5 class="modal-title w-100" id="exampleModalLabel">Weather Info</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <WeatherReport/>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" style={{font:"normal 900 1rem/1.5rem 'Cutive Mono', monospace"}} data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h5 class="modal-title w-100" id="exampleModalLabel">Weather Info</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <WeatherReport/>
+                            </div>
+                            <div class="modal-footer">
+                            <a data-toggle="modal" href="#myModal2" class="btn btn-success" id="graph-btn">Launch graph</a>
+                                <button type="button" class="btn btn-success" style={{font:"normal 900 1rem/1.5rem 'Cutive Mono', monospace"}} data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
 
+
+                        <div class="modal" id="myModal2" data-backdrop="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel2">Some fun with Graphs</h4>
+                                <button id="cross-close-graph" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                </div><div class="container"></div>
+                                <div class="modal-body">
+
+
+                                <div id="chart" className="col-12">
+
+                                
+                                </div>
+
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button"  id="create-graph" class="btn btn-success" style={{font:"normal 900 1rem/1.5rem 'Cutive Mono', monospace"}} >Start Graph</button>
+                                <button type="button" id="remove-graph" class="btn btn-success" style={{font:"normal 900 1rem/1.5rem 'Cutive Mono', monospace"}} data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                    
             </li>
 
@@ -161,9 +190,8 @@ const Navbar = () => {
 
         </div>
         </div>
-
         </nav>
-        
+
     )
 }
 
