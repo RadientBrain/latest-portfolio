@@ -19,7 +19,7 @@ function Contact() {
                         <div className="row d-flex flex-row flex-wrap">
                             <div className="col input-textbox">
                                 <input id="entry.1675495836" name="entry.1675495836" type="text" className="form-control" placeholder="Your Email"/>
-                                <textarea id="entry.483319533" name="entry.483319533" className="form-control" aria-label="message-box" placeholder="Type you message here"></textarea>
+                                <textarea id="entry.483319533" name="entry.483319533" className="form-control" aria-label="message-box" placeholder="Type your message here"></textarea>
                                 <div className="col">
                                     <div className="btn-submit">
                                         <button id="magic-submit" value="Submit" type="submit" className="btn btn-success float-center">Send  <FontAwesomeIcon icon={faPaperPlane} /></button>
