@@ -15,7 +15,7 @@ function About() {
                         </h2>
                         <div className="paragraph py-4 w75">
                             <p className="about-para">
-                            I'm a currently pursuing my B.Tech in Computer Science and Engineering. 
+                            I am currently pursuing my B.Tech in Computer Science and Engineering. 
                             </p>
                             <p className="about-para">
                                 I like coding in Python but am comfortable with many languages like C++, Java, C#, etc.
